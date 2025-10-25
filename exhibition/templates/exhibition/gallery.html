@@ -1,0 +1,11 @@
+{% extends 'exhibition/base.html' %}
+{% load static %}
+{% block content %}
+<section class="section gallery">
+  <h2>Car Gallery</h2>
+  <div class="gallery-grid">
+    <img src="{% static 'images/bmw.jpg' %}" alt="bmw">
+    <img src="{% static 'images/defender.jpg' %}" alt="defender">
+  </div>
+</section>
+{% endblock %}

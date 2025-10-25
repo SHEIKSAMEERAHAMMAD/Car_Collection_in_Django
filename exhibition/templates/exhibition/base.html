@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarVilla Exhibition</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="site-body">
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Sameer's Car Collection</h2>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Content -->
+  <main class="content">
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 CarVilla Exhibition | Designed with Sammu❤️ in Django</p>
+  </footer>
+</body>
+</html>
